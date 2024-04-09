@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="529">
+    <Grid Background="#FFA7D5FF">
+        <RadioButton x:Name="rb2" Content="Последовательное" HorizontalAlignment="Left" Margin="58,189,0,0" VerticalAlignment="Top" Width="134" Height="23"/>
+        <RadioButton x:Name="rb1" Content="Параллельное" HorizontalAlignment="Left" Margin="58,217,0,0" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="49,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24" PreviewTextInput="text1_PreviewTextInput"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Margin="49,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="24" PreviewTextInput="text2_PreviewTextInput"/>
+        <Label Content="Введите сопротивление 1-го резистора&#xD;&#xA;" HorizontalAlignment="Left" Margin="49,42,0,0" VerticalAlignment="Top" Width="234" Height="27"/>
+        <Label Content="Введите сопротивление 2-го резистора&#xA;" HorizontalAlignment="Left" Margin="49,103,0,0" VerticalAlignment="Top" Width="234" Height="27"/>
+        <Button x:Name="Count" Content="Вычислить" HorizontalAlignment="Left" Height="30" Margin="49,245,0,0" VerticalAlignment="Top" Width="152" Background="#FF58A7FF" Click="Count_Click"/>
+        <Button x:Name="Remove" Content="Сбросить данные" HorizontalAlignment="Left" Height="30" Margin="49,280,0,0" VerticalAlignment="Top" Width="152" Background="#FF58A7FF" Click="Remove_Click"/>
+        <TextBlock x:Name="resultText" HorizontalAlignment="Left" Height="30" Margin="275,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Background="White"><Run Language="ru-ru" Text="Результат:"/></TextBlock>
+
+    </Grid>
+</Window>
